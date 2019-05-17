@@ -1,0 +1,81 @@
+/* ==UserStyle==
+@name           Dark Liferay Docs
+@namespace      github.com/lgdd/darth-ray
+@version        1.0.0
+@description    Dark theme for Liferay Docs
+@author         github.com/lgdd
+@license        MIT
+==/UserStyle== */
+@-moz-document domain("dev.liferay.com") {
+  #wrapper,
+  .aui .portlet,
+  .aui .portlet-borderless-container,
+  .taglib-social-bookmarks {
+      background-color: #293544;
+      color: #ddd;
+  }
+  .aui #banner {
+      background: #182029;
+  }
+  .aui a,
+  .aui #navigation .nav li.selected .child-menu li a {
+      color: #ddd;
+  }
+  .aui .knowledge-base-portlet a:hover,
+  .aui .knowledge-base-portlet a:active,
+  .aui .knowledge-base-portlet a:focus,
+  .aui .knowledge-base-portlet.knowledge-base-portlet-display .kbarticle-navigation .kbarticle-expanded {
+      font-weight: bold;
+      color: white;
+  }
+  .aui .knowledge-base-portlet.knowledge-base-portlet-display .kbarticle-navigation .kbarticle-selected {
+      border-left: 3px solid #55bfda;
+      font-weight: bold;
+      color: white;
+  }
+  .aui .kb-article-container h1,
+  .aui .knowledge-base-portlet .kb-article-body a h2,
+  .aui .knowledge-base-portlet .kb-article-body a h3,
+  .aui .knowledge-base-portlet .kb-article-body a h4,
+  .aui .knowledge-base-portlet .kb-article-body a h5 {
+      color: white;
+  }
+  .aui .knowledge-base-portlet .kb-entity-body .kb-article-child .kb-elements .kb-element .kb-element-body a {
+      text-decoration: underline;
+  }
+  .aui select,
+  .aui .search-nav input[type="text"] {
+      background-color: #202a36;
+      color: #ddd;
+      box-shadow: none;
+      border: 1px solid rgba(255, 255, 255, .52);
+  }
+  .aui .prenavbar {
+      border-color: #202a36;
+  }
+  .aui pre {
+      background-color: #202935;
+      color: #55bfda !important;
+  }
+  .aui code {
+      color: #55bfda;
+      background-color: #202935;
+      font-size: .9rem;
+      border: none;
+  }
+  .aui .sidebar,
+  .aui .dockbar-split .dockbar .navbar-inner .nav-account-controls,
+  .aui .knowledge-base-portlet .kb-entity-body .kb-article-child .kb-elements {
+      background: #304864;
+      border: none;
+  }
+  .aui .sidebar .sidebar-text p {
+      color: #ddd;
+  }
+  .aui .navbar .nav > li > .dropdown-menu:after {
+      border-bottom: 6px solid #202a36;
+  }
+  .aui #footer {
+      background: rgb(38, 77, 134);
+  }
+}

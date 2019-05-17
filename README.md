@@ -11,6 +11,10 @@
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-forums.user.css)
 ![preview-forums](img/preview-forums.png)
 
+## Docs
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-docs.user.css)
+![preview-docs](img/preview-docs.png)
+
 ## License
 
 [MIT](LICENSE)
