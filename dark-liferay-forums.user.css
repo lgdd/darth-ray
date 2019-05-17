@@ -1,0 +1,172 @@
+/* ==UserStyle==
+@name           Dark Liferay Forums
+@namespace      github.com/lgdd/darth-ray
+@version        1.0.0
+@description    Dark theme for Liferay Forums
+@author         github.com/lgdd
+@license        MIT
+@homepageURL    github.com/lgdd/darth-ray
+@supportURL     github.com/lgdd/darth-ray/issues
+@updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-forums.user.css
+==/UserStyle== */
+@-moz-document regexp("^(https:\\/\\/)(community.liferay.com)(\\/[a-z]{2})*(\\/forums)(\\/)*(\\S)*$") {
+  .community-container-layout,
+  .navbar-default,
+  .portlet-decorate .portlet-content,
+  .pagination > .active > a,
+  .pagination > .active > a:hover,
+  .pagination > .active > a:focus,
+  .pagination > .active > span,
+  .pagination > .active > span:hover,
+  .pagination > .active > span:focus {
+      background-color: #293544;
+      color: #ddd;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > li > a {
+      color: #ddd;
+  }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+      font-weight: bold;
+  }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus,
+  .tabular-list-group .list-group-item-content a:hover,
+  .tabular-list-group .list-group-item-content a:focus,
+  .list-group-card .card-col-content a,
+  .list-group-card .card-col-content a:focus,
+  .list-group-card .card-col-content a:hover,
+  .breadcrumb a {
+      color: white;
+  }
+  .card a,
+  .card-horizontal a {
+      color: #99caff;
+  }
+  .card a:hover,
+  .card-horizontal a:hover,
+  .card a:focus,
+  .card-horizontal a:focus {
+      text-decoration: underline;
+  }
+  .pagination-results,
+  .pagination-items-per-page a,
+  .breadcrumb > .active .text-default,
+  .pagination-results,
+  .pagination-items-per-page a,
+  .breadcrumb > .active .text-default,
+  .text-default {
+      color: #a5b7c5;
+  }
+  .tabular-list-group .list-group-item-content,
+  .tabular-list-group .list-group-item-field,
+  .panel-group .panel-heading + .panel-collapse > .panel-body,
+  .card,
+  .card-horizontal {
+      background: #202a36;
+      border: none;
+  }
+  .splitter,
+  .portlet-asset-publisher .quote,
+  .portlet-message-boards .quote,
+  .portlet-trash .quote,
+  .panel-default > .panel-heading,
+  .sticker-default {
+      background-color: #304864;
+      color: #ddd;
+      border: none;
+  }
+  .dropdown-menu {
+      background-color: #304864;
+      color: #eee;
+      border: none;
+      border-radius: 0;
+  }
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+      color: black;
+      background-color: #66b6f0;
+  }
+  .lfr-code,
+  pre,
+  code {
+      background-color: #171e27;
+      color: #55bfda;
+      border: none;
+      border-radius: 0;
+  }
+  .badge-default {
+      background-color: #171e27;
+      color: #55bfda;
+  }
+  .lfr-code tr td.line-numbers {
+      background-color: black;
+  }
+  .lfr-code tr td.line-numbers:before {
+      text-shadow: none;
+  }
+  .tabular-list-group .list-group-item-content a {
+      color: #ddd;
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+  .portlet-asset-publisher .thread-controls,
+  .portlet-message-boards .thread-controls,
+  .portlet-trash .thread-controls {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      position: absolute;
+      right: 0;
+      top: 8rem;
+  }
+  .portlet-message-boards form > h3 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 0;
+  }
+  .portlet-message-boards .statistics-panel-content h4 {
+      font-size: 1.5rem;
+  }
+  .list-group-item-content h5,
+  .list-group-item-content .h5 {
+      font-size: 1rem;
+  }
+  .list-group-item-content h6,
+  .list-group-item-content .h6 {
+      color: #69bdff;
+  }
+  #navigation {
+      background: rgba(0, 0, 0, .5);
+  }
+  .collapse-basic-search .basic-search .form-control {
+      padding-left: 15px;
+  }
+  .navbar.collapse-basic-search .basic-search .form-control,
+  .navbar.collapse-basic-search .basic-search .btn-default {
+      background-color: #202a36;
+      height: 50px;
+  }
+  .portlet-decorate .portlet-content,
+  .navbar-default {
+      border: none;
+  }
+  .breadcrumb {
+      margin-bottom: 10px;
+  }
+  .main-content-body {
+      margin-top: 10px;
+  }
+  .card .divider,
+  .card-horizontal .divider {
+      background-color: #293544;
+      height: 3px;
+  }
+  .footer {
+      background: rgb(38, 77, 134);
+  }
+}

@@ -1,0 +1,208 @@
+/* ==UserStyle==
+@name           Dark Liferay Blogs
+@namespace      github.com/lgdd/darth-ray
+@version        1.0.0
+@description    Dark theme for Liferay Blogs
+@author         github.com/lgdd
+@license        MIT
+@homepageURL    github.com/lgdd/darth-ray
+@supportURL     github.com/lgdd/darth-ray/issues
+@updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-blogs.user.css
+==/UserStyle== */
+@-moz-document regexp("^(https:\\/\\/)(community.liferay.com)(\\/[a-z]{2})*(\\/blogs)(\\/)*(\\S)*$") {
+  @media (min-width: 1800px) {
+      :root {
+          font-size: 16px;
+      }
+  }
+  :root {
+      font-size: 16px;
+  }
+  #wrapper,
+  .portlet-blogs .entry-list-all,
+  .portlet-blogs .entry-list .container h4 a,
+  .portlet-blogs .entry-list .container p:not([class]),
+  .portlet-blogs .entry-list .container li,
+  .highlight-description,
+  .highlight-btn,
+  .portlet-blogs .edit-entry .entry-content h1,
+  .portlet-blogs .edit-entry .entry-content h2,
+  .portlet-blogs .edit-entry .entry-content h3,
+  .portlet-blogs .edit-entry .entry-content h4,
+  .portlet-blogs .edit-entry .entry-content h5,
+  .portlet-blogs .edit-entry .entry-content h6,
+  .portlet-blogs .entry-body .entry-content h1,
+  .portlet-blogs .entry-body .entry-content h2,
+  .portlet-blogs .entry-body .entry-content h3,
+  .portlet-blogs .entry-body .entry-content h4,
+  .portlet-blogs .entry-body .entry-content h5,
+  .portlet-blogs .entry-body .entry-content h6,
+  .portlet-blogs .edit-entry .entry-content p,
+  .portlet-blogs .entry-body .entry-content p,
+  .portlet-blogs .edit-entry .entry-content li,
+  .portlet-blogs .entry-body .entry-content li,
+  .portlet-blogs .edit-entry .entry-subtitle p,
+  .portlet-blogs .entry-body .entry-subtitle p,
+  .portlet-blogs .edit-entry .entry-content section > *,
+  .portlet-blogs .edit-entry .entry-content > *,
+  .portlet-blogs .edit-entry p,
+  .portlet-blogs .entry-body .entry-content section > *,
+  .portlet-blogs .entry-body .entry-content > *,
+  .portlet-blogs .entry-body p .portlet-blogs .edit-entry .entry-content ul:not(.dropdown-menu):not(.radio-group):not(.checklist) > li:before,
+  .portlet-blogs .entry-body .entry-content ul:not(.dropdown-menu):not(.radio-group):not(.checklist) > li:before {
+      background: #293544 !important;
+      color: #ddd;
+  }
+  .portlet-blogs .edit-entry .entry-content p,
+  .portlet-blogs .edit-entry .entry-content li,
+  .portlet-blogs .entry-body .entry-content p,
+  .portlet-blogs .entry-body .entry-content li {
+      font-size: 1.2rem;
+  }
+  @media (min-width: 768px) {
+      .portlet-blogs .entry-header .entry-title {
+          font-size: 4rem;
+          line-height: 1em;
+      }
+  }
+  .portlet-blogs .entry-header .entry-title {
+      font-size: 4rem;
+      line-height: 1em;
+  }
+  .portlet-blogs .entry-header .entry-info {
+      font-size: 1.2rem;
+  }
+  .portlet-blogs .edit-entry .entry-content h1,
+  .portlet-blogs .entry-body .entry-content h1 {
+      margin: 3rem 0 1.5rem;
+      font-size: 3rem;
+  }
+  .portlet-blogs .edit-entry .entry-content h2,
+  .portlet-blogs .entry-body .entry-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: .8rem;
+  }
+  .portlet-blogs .edit-entry .entry-content h3,
+  .portlet-blogs .entry-body .entry-content h3 {
+      font-size: 2rem;
+      margin-bottom: .6rem;
+  }
+  .portlet-blogs .edit-entry .entry-content h4,
+  .portlet-blogs .entry-body .entry-content h4 {
+      font-size: 1.5rem;
+  }
+  .portlet-blogs .edit-entry .entry-content h5,
+  .portlet-blogs .entry-body .entry-content h5 {
+      font-size: 1rem;
+  }
+  .highlight {
+      background: #293544;
+  }
+  .highlight-title {
+      background: #fff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  .portlet-asset-categories-navigation .blog-header .container {
+      width: 100%;
+      background: rgba(0, 0, 0, .5);
+  }
+  .portlet-asset-categories-navigation .blog-header .container .blog-title,
+  .portlet-asset-categories-navigation .blog-header .container .tags {
+      text-align: center;
+  }
+  .footer {
+      background: rgb(38, 77, 134);
+  }
+  .portlet-blogs .edit-entry .entry-subtitle,
+  .portlet-blogs .entry-body .entry-subtitle {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+      margin-top: 20px;
+      margin-bottom: 0;
+  }
+  .portlet-blogs .edit-entry .entry-subtitle p,
+  .portlet-blogs .entry-body .entry-subtitle p {
+      font-size: 1.8rem;
+      font-style: italic;
+  }
+  .list-group-card .card-col-content a,
+  .list-group-card .card-col-content a:hover,
+  .list-group-card .card-col-content a:focus,
+  .list-group-card .card-col-content a:active {
+      color: #ddd;
+      text-decoration: underline;
+  }
+  .portlet-blogs .edit-entry .entry-content a,
+  .portlet-blogs .entry-body .entry-content a {
+      color: white;
+      text-decoration: underline;
+  }
+  .card-tab-group .card-tab:nth-child(n+2),
+  .card-tab-group .card-tab:nth-child(n+2) .card-tab {
+
+      border-left: 4px solid #5581a0;
+  }
+  .taglib-discussion .lfr-discussion-body .lfr-discussion-message .lfr-discussion-message-author .author-link {
+      font-size: 1.1rem;
+      font-weight: bold;
+  }
+  .panel,
+  pre {
+      background-color: #202935;
+  }
+  pre {
+      color: #55bfda !important;
+  }
+  code {
+      color: #55bfda;
+      background-color: #202935;
+      font-size: .9rem;
+  }
+  .alert-info,
+  .portlet-msg-help,
+  .portlet-msg-info,
+  .portlet-msg-progress {
+      background: #426ca9;
+      color: #ddd;
+  }
+  .alert-warning,
+  .portlet-msg-alert {
+      background-color: #92872f;
+      border-color: #92872f;
+      color: #ddd;
+  }
+  .portlet-blogs .edit-entry .entry-content p,
+  .portlet-blogs .entry-body .entry-content p {
+      line-height: 1.6em;
+  }
+  .portlet-blogs .edit-entry .entry-content ul:not(.dropdown-menu):not(.radio-group):not(.checklist) > li::before,
+  .portlet-blogs .entry-body .entry-content ul:not(.dropdown-menu):not(.radio-group):not(.checklist) > li::before {
+      width: 1rem;
+  }
+  .portlet-blogs .entry-header .container {
+      width: 100%;
+      max-width: 100%;
+      padding: 100px 0 64px;
+      margin: 0;
+      background: rgba(0, 0, 0, .5);
+      text-align: center;
+  }
+
+  .portlet-blogs .entry-header .entry-title,
+  .portlet-blogs .entry-header .entry-info {
+      color: #ddd;
+  }
+  .portlet-blogs .entry-header .entry-title {
+      margin: 0;
+      max-width: 100%;
+      width: 100%;
+  }
+  .portlet-blogs .entry-header {
+      padding: 0;
+  }
+  .highlight-btn:hover,
+  .highlight-btn:focus {
+      color: white;
+  }
+}
