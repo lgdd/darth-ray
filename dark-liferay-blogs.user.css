@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Liferay Blogs
 @namespace      github.com/lgdd/darth-ray
-@version        1.0.1
+@version        1.0.2
 @description    Dark theme for Liferay Blogs
 @author         github.com/lgdd
 @license        MIT
@@ -228,6 +228,17 @@
     .portlet-blogs .widget-mode-detail .entry-content a:not([class]),
     .portlet-blogs .widget-mode-detail .widget-mode-detail-text a:not([class]) {
         border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+    }
+    .label-secondary, .label.draft {
+        background-color: #171e27;
+        color: #55bfda;
+        border: 1px solid #55bfda70;
+    }
+    .label-secondary[href]:hover, .label.draft[href]:hover, .label-secondary[href]:focus, .label.draft[href]:focus {
+        background-color: #171e27;
+        color: #55bfda;
+        border: 1px solid #55bfda;
+        text-decoration: none;
     }
     .footer {
         background: rgb(38, 77, 134);

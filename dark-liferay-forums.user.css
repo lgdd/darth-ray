@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Liferay Forums
 @namespace      github.com/lgdd/darth-ray
-@version        1.0.1
+@version        1.0.2
 @description    Dark theme for Liferay Forums
 @author         github.com/lgdd
 @license        MIT
@@ -123,9 +123,16 @@
         border-radius: 6px;
         padding: 20px;
     }
-    .badge-default {
+    .label-secondary, .label.draft {
         background-color: #171e27;
         color: #55bfda;
+        border: 1px solid #55bfda70;
+    }
+    .label-secondary[href]:hover, .label.draft[href]:hover, .label-secondary[href]:focus, .label.draft[href]:focus {
+        background-color: #171e27;
+        color: #55bfda;
+        border: 1px solid #55bfda;
+        text-decoration: none;
     }
     .lfr-code tr td.line-numbers {
         background-color: black;
