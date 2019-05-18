@@ -1,170 +1,196 @@
 /* ==UserStyle==
 @name           Dark Liferay Forums
 @namespace      github.com/lgdd/darth-ray
-@version        1.0.0
+@version        1.0.1
 @description    Dark theme for Liferay Forums
 @author         github.com/lgdd
 @license        MIT
 @updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-forums.user.css
 ==/UserStyle== */
 @-moz-document regexp("^(https:\\/\\/)(community.liferay.com)(\\/[a-z]{2})*(\\/forums)(\\/)*(\\S)*$") {
-  .community-container-layout,
-  .navbar-default,
-  .portlet-decorate .portlet-content,
-  .pagination > .active > a,
-  .pagination > .active > a:hover,
-  .pagination > .active > a:focus,
-  .pagination > .active > span,
-  .pagination > .active > span:hover,
-  .pagination > .active > span:focus {
-      background-color: #293544;
-      color: #ddd;
-  }
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus,
-  .navbar-default .navbar-nav > li > a {
-      color: #ddd;
-  }
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-      font-weight: bold;
-  }
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus,
-  .tabular-list-group .list-group-item-content a:hover,
-  .tabular-list-group .list-group-item-content a:focus,
-  .list-group-card .card-col-content a,
-  .list-group-card .card-col-content a:focus,
-  .list-group-card .card-col-content a:hover,
-  .breadcrumb a {
-      color: white;
-  }
-  .card a,
-  .card-horizontal a {
-      color: #99caff;
-  }
-  .card a:hover,
-  .card-horizontal a:hover,
-  .card a:focus,
-  .card-horizontal a:focus {
-      text-decoration: underline;
-  }
-  .pagination-results,
-  .pagination-items-per-page a,
-  .breadcrumb > .active .text-default,
-  .pagination-results,
-  .pagination-items-per-page a,
-  .breadcrumb > .active .text-default,
-  .text-default {
-      color: #a5b7c5;
-  }
-  .tabular-list-group .list-group-item-content,
-  .tabular-list-group .list-group-item-field,
-  .panel-group .panel-heading + .panel-collapse > .panel-body,
-  .card,
-  .card-horizontal {
-      background: #202a36;
-      border: none;
-  }
-  .splitter,
-  .portlet-asset-publisher .quote,
-  .portlet-message-boards .quote,
-  .portlet-trash .quote,
-  .panel-default > .panel-heading,
-  .sticker-default {
-      background-color: #304864;
-      color: #ddd;
-      border: none;
-  }
-  .dropdown-menu {
-      background-color: #304864;
-      color: #eee;
-      border: none;
-      border-radius: 0;
-  }
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-      color: black;
-      background-color: #66b6f0;
-  }
-  .lfr-code,
-  pre,
-  code {
-      background-color: #171e27;
-      color: #55bfda;
-      border: none;
-      border-radius: 0;
-  }
-  .badge-default {
-      background-color: #171e27;
-      color: #55bfda;
-  }
-  .lfr-code tr td.line-numbers {
-      background-color: black;
-  }
-  .lfr-code tr td.line-numbers:before {
-      text-shadow: none;
-  }
-  .tabular-list-group .list-group-item-content a {
-      color: #ddd;
-      font-weight: 600;
-      font-size: 1.2rem;
-  }
-  .portlet-asset-publisher .thread-controls,
-  .portlet-message-boards .thread-controls,
-  .portlet-trash .thread-controls {
-      padding: 0;
-      margin: 0;
-      border: 0;
-      position: absolute;
-      right: 0;
-      top: 8rem;
-  }
-  .portlet-message-boards form > h3 {
-      font-size: 1.7rem;
-      font-weight: 600;
-      margin-bottom: 0;
-  }
-  .portlet-message-boards .statistics-panel-content h4 {
-      font-size: 1.5rem;
-  }
-  .list-group-item-content h5,
-  .list-group-item-content .h5 {
-      font-size: 1rem;
-  }
-  .list-group-item-content h6,
-  .list-group-item-content .h6 {
-      color: #69bdff;
-  }
-  #navigation {
-      background: rgba(0, 0, 0, .5);
-  }
-  .collapse-basic-search .basic-search .form-control {
-      padding-left: 15px;
-  }
-  .navbar.collapse-basic-search .basic-search .form-control,
-  .navbar.collapse-basic-search .basic-search .btn-default {
-      background-color: #202a36;
-      height: 50px;
-  }
-  .portlet-decorate .portlet-content,
-  .navbar-default {
-      border: none;
-  }
-  .breadcrumb {
-      margin-bottom: 10px;
-  }
-  .main-content-body {
-      margin-top: 10px;
-  }
-  .card .divider,
-  .card-horizontal .divider {
-      background-color: #293544;
-      height: 3px;
-  }
-  .footer {
-      background: rgb(38, 77, 134);
-  }
+    .community-container-layout,
+    .navbar-default,
+    .portlet-decorate .portlet-content,
+    .navigation-bar-light,
+    .pagination > li.active > a,
+    .pagination > li.active > a:hover,
+    .pagination > li.active > a:focus {
+        background-color: #293544;
+        color: #ddd;
+        font-size: 1rem;
+    }
+    .panel-default,
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > li > a,
+    .navigation-bar-light .nav-link,
+    .navigation-bar-light .navbar-nav .btn-unstyled,
+    .portlet-asset-publisher .message-user-display,
+    .portlet-message-boards .message-user-display,
+    .portlet-trash .message-user-display {
+        color: #ddd;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        font-weight: bold;
+    }
+    a,
+    a:hover,
+    a:focus,
+    .lfr-search-container-wrapper a,
+    .navigation-bar-light .nav-link.active,
+    .navigation-bar-light .nav-link[aria-expanded="true"],
+    .navigation-bar-light .navbar-nav .btn-unstyled.active,
+    .navigation-bar-light .navbar-nav .btn-unstyled[aria-expanded="true"],
+    .navigation-bar-light .nav-link:hover,
+    .navigation-bar-light .navbar-nav .btn-unstyled:hover,
+    .pagination-items-per-page > a:hover,
+    .pagination-items-per-page > a:focus,
+    .pagination-items-per-page > .btn-unstyled:hover,
+    .pagination-items-per-page > .btn-unstyled:focus,
+    .show.page-item .dropdown-toggle,
+    .list-group,
+    .show.pagination-items-per-page .dropdown-toggle,
+    .pagination > li > a:hover,
+    .pagination > li > a:focus,
+    .input-group-btn:last-child > .btn:hover,
+    .input-group-btn:last-child > .btn-group > .btn:hover,
+    .input-group-btn:first-child > .btn-group:not(:first-child) > .btn:hover {
+        color: white;
+    }
+    .card a,
+    .card-horizontal a {
+        color: #99caff;
+    }
+    a:hover,
+    a:focus,
+    .card a:hover,
+    .card-horizontal a:hover,
+    .card a:focus,
+    .card-horizontal a:focus {
+        text-decoration: underline;
+    }
+    .pagination > li > a,
+    .pagination-results,
+    .pagination-items-per-page a,
+    .breadcrumb > .active .text-default,
+    .pagination-results,
+    .pagination-items-per-page a,
+    .breadcrumb > .active .text-default,
+    .breadcrumb > li.active,
+    .text-default {
+        color: #ddd;
+        font-size: 1rem;
+    }
+    .panel,
+    .list-group-notification .list-group-item {
+        background: #202a36;
+        box-shadow: none;
+        border: none;
+    }
+    .portlet-asset-publisher .quote,
+    .portlet-message-boards .quote,
+    .portlet-trash .quote,
+    .list-group-header,
+    .list-group-header-title,
+    .lfr-panel.panel-default .panel-heading {
+        background-color: #304864;
+        color: #ddd;
+        border: none;
+    }
+    .dropdown-item,
+    .dropdown-menu > li > a,
+    .dropdown-menu .link-list > li > a,
+    .dropdown-menu {
+        background-color: #304864;
+        color: #eee;
+        border: none;
+        border-radius: 0;
+    }
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        color: black;
+        background-color: #66b6f0;
+    }
+    .lfr-code,
+    pre,
+    code {
+        background-color: #171e27;
+        color: #55bfda;
+        border: none;
+        border-radius: 6px;
+        padding: 20px;
+    }
+    .badge-default {
+        background-color: #171e27;
+        color: #55bfda;
+    }
+    .lfr-code tr td.line-numbers {
+        background-color: black;
+    }
+    .lfr-code tr td.line-numbers:before {
+        text-shadow: none;
+    }
+    .tabular-list-group .list-group-item-content a {
+        color: #ddd;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .portlet-message-boards {
+        margin: 0;
+    }
+    .portlet-message-boards form > h3 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    .portlet-message-boards .list-group .list-group-item h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .lfr-search-container-wrapper .list-group .list-group-item h5,
+    .lfr-search-container-wrapper .list-group .list-group-item .h5 {
+        font-size: 1rem;
+    }
+    .lfr-search-container-wrapper .list-group .list-group-item h6,
+    .lfr-search-container-wrapper .list-group .list-group-item .h6 {
+        color: #69bdff;
+    }
+    #navigation {
+        background: rgba(0, 0, 0, .5);
+    }
+    .collapse-basic-search .basic-search .form-control {
+        padding-left: 15px;
+    }
+    .basic-search .input-group-input .basic-search-slider .form-control,
+    .input-group-addon:last-child,
+    .input-group-btn:last-child > .btn,
+    .input-group-btn:last-child > .btn-group > .btn,
+    .input-group-btn:last-child > .dropdown-toggle,
+    .input-group-btn:first-child > .btn:not(:first-child),
+    .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+        background-color: #202a36;
+        color: #ddd;
+        border: none;
+    }
+    .portlet-decorate .portlet-content,
+    .navbar-default {
+        border: none;
+    }
+    .breadcrumb {
+        margin-bottom: 10px;
+    }
+    .main-content-body {
+        margin-top: 10px;
+    }
+    .card .divider,
+    .card-horizontal .divider {
+        background-color: #293544;
+        height: 3px;
+    }
+    .footer {
+        background: rgb(38, 77, 134);
+    }
 }
