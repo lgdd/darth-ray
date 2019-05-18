@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Liferay Docs
 @namespace      github.com/lgdd/darth-ray
-@version        1.0.1
+@version        1.0.2
 @description    Dark theme for Liferay Docs
 @author         github.com/lgdd
 @license        MIT
@@ -54,9 +54,18 @@
     .aui .knowledge-base-portlet .kb-article-body a h2,
     .aui .knowledge-base-portlet .kb-article-body a h3,
     .aui .knowledge-base-portlet .kb-article-body a h4,
-    .aui .knowledge-base-portlet .kb-article-body a h5 {
+    .aui .knowledge-base-portlet .kb-article-body a h5,
+    .aui .knowledge-base-portlet .kb-article-body a:hover h2,
+    .aui .knowledge-base-portlet .kb-article-body a:hover h3,
+    .aui .knowledge-base-portlet .kb-article-body a:hover h4,
+    .aui .knowledge-base-portlet .kb-article-body a:hover h5 {
         color: white;
     }
+    .aui a:hover code,
+    .aui .knowledge-base-portlet .kb-article-body a:hover h2,
+    .aui .knowledge-base-portlet .kb-article-body a:hover h3,
+    .aui .knowledge-base-portlet .kb-article-body a:hover h4,
+    .aui .knowledge-base-portlet .kb-article-body a:hover h5,
     .aui .knowledge-base-portlet .kb-entity-body .kb-article-child .kb-elements .kb-element .kb-element-body a {
         text-decoration: underline;
     }
@@ -78,6 +87,8 @@
         background-color: #202935;
         color: #55bfda !important;
     }
+    .aui a code,
+    .aui a:hover code,
     .aui code {
         color: #55bfda;
         background-color: #202935;
