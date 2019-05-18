@@ -204,7 +204,8 @@
     .portlet-blogs .widget-mode-simple-entry li,
     .portlet-blogs .widget-mode-simple-entry h4 a,
     .portlet-blogs .entry-header .entry-title,
-    .portlet-blogs .entry-header .entry-info {
+    .portlet-blogs .entry-header .entry-info,
+    .alloy-editor-container .alloy-editor.alloy-editor-placeholder {
         color: #ddd;
     }
     .portlet-blogs .entry-header .entry-title {
