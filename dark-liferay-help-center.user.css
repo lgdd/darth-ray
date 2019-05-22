@@ -1,0 +1,127 @@
+/* ==UserStyle==
+@name           Dark Liferay Help Center
+@namespace      github.com/lgdd/darth-ray
+@version        1.0.0
+@description    Dark theme for Liferay Help Center
+@author         github.com/lgdd
+@license        MIT
+@updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-help-center.user.css
+==/UserStyle== */
+@-moz-document domain("help.liferay.com") {
+  body,
+  .header {
+      background-color: #293544;
+      color: #ddd;
+  }
+  .btn-primary,
+  a[role=button],
+  input[type=submit] {
+      background-color: #0d43a9;
+      border: none;
+  }
+  .btn-primary:hover,
+  a[role=button]:hover,
+  input[type=submit]:hover {
+      background-color: #1150c7;
+      border: none;
+  }
+  .products-landing-tablist .nav-link.active,
+  .products-landing-tablist .nav-link:hover {
+      background-color: #94c4f7;
+      color: #252525;
+  }
+  .article-sidenav .sidenav,
+  .header .header-menu,
+  #user #user-dropdown {
+      background-color: #202a36;
+      color: #eee;
+  }
+  .article-sidenav .sidenav-item:hover,
+  .article-sidenav .sidenav-item:focus {
+      background-color: #304864;
+  }
+  .header .header-menu .header-menu-content .card-menu .nav-card:hover,
+  .dropdown-menu [role="menuitem"]:hover {
+      background-color: #304864;
+      color: #eee;
+  }
+  .article-sidenav .active > a {
+      border-left: 2.5px solid #94c4f7;
+      color: white;
+  }
+  .btn-outline-primary,
+  .btn-outline-primary:focus,
+  .btn-outline-primary:hover,
+  .btn-outline-primary:not([href]):not([tabindex]),
+  .btn-outline-primary:not([href]):not([tabindex]):focus,
+  .btn-outline-primary:not([href]):not([tabindex]):hover {
+      border-color: #94c4f7;
+      color: #94c4f7;
+  }
+  .btn-outline-primary:hover,
+  .btn-outline-primary:not([href]):not([tabindex]):hover {
+      background-color: #171e27;
+  }
+  .search-lg input[type=search],
+  .search-nav input[type=search] {
+      background-color: #eee;
+  }
+  .product-card {
+      border-color: #eee;
+  }
+  a,
+  a:hover,
+  .breadcrumbs li a,
+  .article-sidenav a,
+  .dropdown-menu [role="menuitem"] {
+      color: #eee;
+  }
+  .article-siblings a {
+      font-weight: bold;
+      font-size: 1.2rem;
+  }
+  .breadcrumbs li + li:before {
+      content: ">";
+      top: 25%;
+      background: none;
+  }
+  .nav-card a,
+  .product-card a,
+  .footer .footer-links li a,
+  .article-body,
+  .article-content a > h2,
+  .article-content a > h3,
+  .article-content a > h4 {
+      color: #ddd;
+  }
+  .secondary-text-color,
+  .header .header-menu .header-menu-content .submenu .language .nav-card .title {
+      color: #c7c7c7;
+  }
+  .header.scroll-shadow {
+      box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.3);
+  }
+  .product-card:hover {
+      border-bottom: 3px solid #5e89d9;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .header .header-content .site-name,
+  .nav-card .title,
+  .product-card .title,
+  .product-card .lexicon-icon-arrow-right,
+  .header .header-menu .header-menu-content .submenu .highlighted .title {
+      color: white;
+  }
+  pre,
+  code,
+  .article-content code {
+      background-color: #171e27;
+      color: #55bfda;
+      border: none;
+  }
+}
