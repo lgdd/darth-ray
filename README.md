@@ -19,6 +19,10 @@ Install [Stylus](https://add0n.com/stylus.html) for [Chrome](https://chrome.goog
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-docs.user.css)
 ![preview-docs](img/preview-docs.png)
 
+## Help Center
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-help-center.user.css)
+![preview-docs](img/preview-help-center.png)
+
 ## License
 
 [MIT](LICENSE)
