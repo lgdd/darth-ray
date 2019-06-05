@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Dark Liferay Blogs
 @namespace      github.com/lgdd/darth-ray
-@version        1.0.3
+@version        1.0.4
 @description    Dark theme for Liferay Blogs
 @author         github.com/lgdd
 @license        MIT
 @updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-blogs.user.css
 ==/UserStyle== */
-@-moz-document regexp("^(https:\\/\\/)(community.liferay.com)(\\/[a-z]{2})*(\\/blogs)(\\/)*(\\S)*$") {
+@-moz-document regexp("^(https:\\/\\/)(liferay.dev)(\\/[a-z]{2})*(\\/blogs)(\\/)*(\\S)*$") {
     #wrapper,
     .portlet-blogs .widget-mode-simple-entry,
     .btn-outline-secondary,
