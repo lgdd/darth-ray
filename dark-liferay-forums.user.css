@@ -5,7 +5,7 @@
 @description    Dark theme for Liferay Forums
 @author         github.com/lgdd
 @license        MIT
-@updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-forums.user.css
+@updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/main/dark-liferay-forums.user.css
 ==/UserStyle== */
 @-moz-document regexp("^(https:\\/\\/)(community.liferay.com)(\\/[a-z]{2})*(\\/forums)(\\/)*(\\S)*$") {
     .community-container-layout,

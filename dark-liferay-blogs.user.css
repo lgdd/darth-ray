@@ -5,7 +5,7 @@
 @description    Dark theme for Liferay Blogs
 @author         github.com/lgdd
 @license        MIT
-@updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/master/dark-liferay-blogs.user.css
+@updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/main/dark-liferay-blogs.user.css
 ==/UserStyle== */
 @-moz-document regexp("^(https:\\/\\/)(liferay.dev)(\\/[a-z]{2})*(\\/blogs)(\\/)*(\\S)*$") {
     #wrapper,
