@@ -1,0 +1,346 @@
+/* ==UserStyle==
+@name           Dark Liferay Issues
+@namespace      DarkLiferayIssues
+@version        1.0.2
+@description    Dark theme for Liferay Issues (JIRA)
+@author         github.com/lgdd
+@updateURL      https://raw.githubusercontent.com/lgdd/dark-liferay-sites/main/dark-liferay-issues.user.css
+==/UserStyle== */
+@-moz-document domain("issues.liferay.com") {
+  /*
+  ** Backgrounds (Dark)
+  */
+  body,
+  .aui-page-panel,
+  #issue-content,
+  #footer-logo,
+  #ghx-pool,
+  #ghx-column-header-group,
+  .split-view #stalker,
+  .ghx-issuetable,
+  .navigator-search,
+  .editable-field:hover,
+  .split-view .issue-header,
+  .issue-body-content .module > .mod-header > h1,
+  .issue-body-content .module > .mod-header > h2,
+  .issue-body-content .module > .mod-header > h3,
+  .issue-body-content .module > .mod-header > h4,
+  .issue-body-content .module > .mod-header > h5,
+  .issue-body-content .module > .mod-header > h6,
+  .simple-issue-list .inline-issue-create-container,
+  .details-layout .split-view .list-results-panel,
+  .issue-data-block:hover,
+  .issue-data-block.focused,
+  .split-view .list-results-panel .count-pagination,
+  .issue-view > .issue-container .issue-header,
+  .issue-body-content .module > .mod-header .ops,
+  table.aui > tbody > tr,
+  table.aui > tfoot > tr,
+  .editable-field .save-options {
+    background: #293544;
+  }
+
+  /*
+  ** Backgrounds (Darker)
+  */
+  /* begin editor */
+  body#tinymce,
+  .wiki-edit-toolbar,
+  div.mce-edit-area,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .multi-select:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .multi-select:focus>option,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .password:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .password:focus>option,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .select:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .select:focus>option,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .text:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .text:focus>option,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .textarea:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .textarea:focus>option,
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield,
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:hover,
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
+  /* end editor */
+  #issuetable>tbody>tr,
+  .issue-table>tbody>tr,
+  #issuetable>tfoot>tr,
+  .issue-table>tfoot>tr,
+  #issuetable>tbody>tr:hover,
+  .issue-table>tbody>tr:hover,
+  .ghx-column-headers .ghx-column,
+  .ghx-columns .ghx-column,
+  .dynamic-table tr:hover,
+  .aui-inline-dialog.aui-help .aui-inline-dialog-contents,
+  aui-inline-dialog.aui-help .aui-inline-dialog-contents,
+  form.aui:not(.aui-legacy-forms) .password,
+  form.aui:not(.aui-legacy-forms) .select,
+  form.aui:not(.aui-legacy-forms) .text, form.aui:not(.aui-legacy-forms) .textarea,
+  form.aui:not(.aui-legacy-forms) .password:hover,
+  form.aui:not(.aui-legacy-forms) .select:hover,
+  form.aui:not(.aui-legacy-forms) .text:hover, form.aui:not(.aui-legacy-forms) .textarea:hover,
+  .aui-sidebar .aui-sidebar-wrapper,
+  .ui-sidebar::after,
+  table.aui>tbody>tr>th,
+  .preformatted, .code,
+  span.applinks-auth-request,
+  .links-list dd:hover,
+  .ghx-issuetable .issuerow:hover,
+  .editable-field:hover,
+  .details-layout .split-view .list-results-panel .list-panel .issue-list>li.focused {
+    background: #181f28;
+  }
+
+  /*
+  ** Backgrounds (Primary Dark)
+  */
+  .aui-button.aui-button-primary,
+  .aui-button.aui-button-primary:visited,
+  .aui-lozenge.jira-issue-status-lozenge-yellow,
+  .aui-lozenge.jira-issue-status-lozenge-inprogress {
+    background: #3975cf;
+  }
+
+  /*
+  ** Backgrounds (Primary:Hover Dark)
+  */
+  .aui-button.aui-button-primary:focus,
+  .aui-button.aui-button-primary:hover,
+  .ghx-issue.ghx-selected,
+  .ghx-issue:hover {
+    background: #1857b5;
+  }
+
+  /*
+  ** Backgrounds (Secondary Dark)
+  */
+  .ghx-issue,
+  .ghx-parent-group.ghx-away,
+  .aui-lozenge.jira-issue-status-lozenge-medium-gray,
+  .aui-lozenge.jira-issue-status-lozenge-blue-gray,
+  .aui-lozenge.jira-issue-status-lozenge-default,
+  .version-filter-status-button.component-filter-status-pressed,
+  .component-filter-status-button.component-filter-status-pressed,
+  .version-filter-status-button.version-filter-status-pressed,
+  .component-filter-status-button.version-filter-status-pressed {
+    background: #4f70a2;
+  }
+
+  /*
+  ** Foregrounds (Dark)
+  */
+  body,
+  .activity-name,
+  .ghx-issue,
+  .ghx-fa,
+  #issuetable > tbody > tr,
+  .issue-table > tbody > tr,
+  #issuetable > tfoot > tr,
+  .issue-table > tfoot > tr,
+  #footer .footer-body,
+  .ghx-controls-list dt,
+  .version-filter-status-text,
+  .component-filter-status-text,
+  .version-filter-status-button,
+  .component-filter-status-button,
+  table.aui > tbody > tr,
+  table.aui > tfoot > tr,
+  .item-details dl > dt,
+  .aui-sidebar-submenu .aui-nav > li > .aui-nav-item > .aui-icon,
+  .property-list .item .name,
+  table.aui > tbody > tr > th,
+  table.aui > thead > tr > th,
+  .aui-button.aui-button-subtle,
+  .issue-list > li .splitview-issue-link .issue-link-summary {
+    color: #ccc;
+  }
+
+  .SPnUX svg g {
+    stroke: #ccc;
+  }
+
+  /*
+  ** Foregrounds (Lighter)
+  */
+  /* begin editor */
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .multi-select:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .multi-select:focus>option,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .password:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .password:focus>option,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .select:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .select:focus>option,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .text:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .text:focus>option,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .textarea:focus,
+  body:not(.aui-legacy-focus) form.aui:not(.aui-legacy-forms) .textarea:focus>option,
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield,
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:hover,
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
+  /* end editor */
+  h1, h2, h3, h4, h5, h6,
+  #ghx-header h1, #ghx-header h2,
+  .ghx-issue .ghx-key-link, .ghx-parent-stub .ghx-key,
+  .ghx-column-headers h6,
+  table.aui>tbody>tr>th,
+  .editable-field .save-options .aui-button .aui-iconfont-success,
+  .editable-field .save-options .aui-button .aui-iconfont-close-dialog {
+    color: #fff;
+  }
+
+  /*
+  ** Links (Dark)
+  */
+  a,
+  #footer .footer-body a,
+  .aui-button .aui-icon,
+  .aui-button,
+  a.aui-button,
+  .aui-button.aui-button-link,
+  .ghx-issuetable td.assignee > a,
+  .links-list dd .delete-link .icon-default,
+  .aui-nav-vertical > li > a,
+  .split-view .list-results-panel .count-pagination .aui-icon-small::before,
+  .aui-sidebar .aui-page-header-main .aui-item.project-title a,
+  .aui-navgroup-horizontal .aui-nav > li a,
+  .aui-navgroup-vertical .aui-nav > li > a,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a,
+  .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a,
+  .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:link,
+  .aui-navgroup-horizontal .aui-nav > li a,
+  .aui-navgroup-horizontal .aui-nav > li a:link,
+  #issuetable td:not(.issuekey, .summary, .stsummary) a,
+  #issuetable td:not(.issuekey, .summary, .stsummary) a.parentIssue,
+  .issue-table td:not(.issuekey, .summary, .stsummary) a,
+  .issue-table td:not(.issuekey, .summary, .stsummary) a.parentIssue,
+  .aui-tabs > .tabs-menu .menu-item a,
+  .aui-tabs > .tabs-menu .menu-item a:link {
+    color: #fff;
+  }
+
+  /*
+  ** Links (Lighter)
+  */
+  a:hover,
+  .aui-button:visited,
+  .aui-button:hover,
+  .issue-drop-zone__button,
+  .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a.active,
+  .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:visited,
+  .aui-sidebar-submenu .aui-navgroup-vertical .aui-nav .aui-nav-selected > .aui-nav-item,
+  .aui-sidebar .aui-navgroup-vertical .aui-nav .aui-nav-selected > .aui-nav-item,
+  .aui-button:hover .aui-icon,
+  .aui-button-subtle.aui-button:hover,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:hover,
+  .aui-tabs > .tabs-menu .menu-item a:visited,
+  .aui-navgroup-horizontal .aui-nav > li a:visited,
+  .aui-navgroup-horizontal .aui-nav > li a:focus,
+  .aui-navgroup-vertical .aui-nav > li > a:focus,
+  .aui-nav-vertical > li > a:focus,
+  .aui-navgroup-horizontal .aui-nav > li a:hover,
+  .aui-navgroup-vertical .aui-nav > li > a:hover,
+  .aui-nav-vertical > li > a:hover,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:active,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:focus,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:hover,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:active,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:focus,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:visited,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:link {
+    color: #589bff;
+  }
+
+  .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:before,
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:before {
+    background: #589bff;
+  }
+
+  /*
+  ** Borders (Dark)
+  */
+  #ghx-operations,
+  .ghx-column-headers .ghx-column,
+  table.aui:not(.aui-table-list) > tbody > tr > td,
+  table.aui:not(.aui-table-list) > tbody > tr > th,
+  table.aui:not(.aui-table-list) > tfoot > tr > td,
+  table.aui:not(.aui-table-list) > tfoot > tr > th,
+  .ghx-issuetable .nav,
+  .editable-field .save-options,
+  .saved-search-selector,
+  .editable-field .overlay-icon,
+  .aui-sidebar .aui-sidebar-wrapper,
+  .links-list dd,
+  .issue-container.skinny .links-list dt + dd,
+  .issue-search > .aui-page-header,
+  .simple-issue-list .inline-issue-create-container,
+  span.applinks-auth-request,
+  .aui-sidebar .aui-sidebar-footer,
+  .details-layout .split-view .list-results-panel,
+  .details-layout .split-view .list-results-panel .list-panel .issue-list > li {
+    border-color: #181f28;
+  }
+
+  /*
+  ** Borders (Lighter)
+  */
+  /* begin editor */
+  .wiki-edit-toolbar,
+  .richeditor-cover~.rte-container:not(:empty),
+  body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield, body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:hover, body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus, body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
+  /* end editor */
+  #issuetable>thead>tr>th:first-child, .issue-table>thead>tr>th:first-child,
+  #issuetable>tbody>tr>th:first-child, .issue-table>tbody>tr>th:first-child,
+  #issuetable>tbody>tr>td:first-child, .issue-table>tbody>tr>td:first-child,
+  #issuetable>thead>tr>th, .issue-table>thead>tr>th,
+  #issuetable>tbody>tr>th, .issue-table>tbody>tr>th,
+  #issuetable>thead>tr>td, .issue-table>thead>tr>td,
+  #issuetable>tbody>tr>td, .issue-table>tbody>tr>td,
+  #issuetable>tfoot>tr>td, .issue-table>tfoot>tr>td,
+  .aui-inline-dialog.aui-help .aui-inline-dialog-contents,
+  aui-inline-dialog.aui-help .aui-inline-dialog-contents,
+  form.aui:not(.aui-legacy-forms) .password,
+  form.aui:not(.aui-legacy-forms) .select,
+  form.aui:not(.aui-legacy-forms) .text,
+  form.aui:not(.aui-legacy-forms) .textarea {
+    border-color: #6d85a8;
+  }
+
+  /*
+  ** Box Shadows
+  */
+  .editable-field:hover,
+  .editable-field.saving {
+    box-shadow: 0 0 0 1px #181f28;
+  }
+
+  .editable-field .save-options:not(.show-button-bar) {
+    box-shadow: 0 3px 6px #181f2877;
+  }
+
+  .ghx-kanplan-ack {
+    box-shadow: 0 2px 5px 0 #181f28bb, transparent 0 0 0;
+  }
+  
+  /*
+  ** Header to use official Liferay secondary color
+  */
+  .aui-header {
+    background: #134194
+  }
+  
+  /*
+  ** Make badges visible (e.g. watchers)
+  */  
+  aui-badge, .aui-badge{
+    background: #fff;
+  }
+  
+  /*
+  ** Miscellaneous
+  */
+  .ui-sidebar::after {
+    left: 0;
+    width: 2px;
+  }
+}
