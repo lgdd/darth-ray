@@ -12,6 +12,10 @@
   */
   body,
   .aui-page-panel,
+  .navigator-body,
+  .navigator-container,
+  .page-type-split .navigator-body,
+  .page-type-split .navigator-group,
   #issue-content,
   #footer-logo,
   #ghx-pool,
@@ -40,6 +44,10 @@
     background: #293544;
   }
 
+  .no-results {
+    background-color: #293544;
+  }
+
   /*
   ** Backgrounds (Darker)
   */
@@ -61,7 +69,8 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:hover,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
-  /* end editor */
+    /* end editor */
+  .atlassian-autocomplete .suggestions,
   #issuetable>tbody>tr,
   .issue-table>tbody>tr,
   #issuetable>tfoot>tr,
@@ -119,6 +128,7 @@
   .aui-lozenge.jira-issue-status-lozenge-medium-gray,
   .aui-lozenge.jira-issue-status-lozenge-blue-gray,
   .aui-lozenge.jira-issue-status-lozenge-default,
+  .atlassian-autocomplete .suggestions .active,
   .version-filter-status-button.component-filter-status-pressed,
   .component-filter-status-button.component-filter-status-pressed,
   .version-filter-status-button.version-filter-status-pressed,
@@ -130,6 +140,7 @@
   ** Foregrounds (Dark)
   */
   body,
+  .atlassian-autocomplete .suggestions li,
   .activity-name,
   .ghx-issue,
   .ghx-fa,
@@ -177,8 +188,15 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:hover,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
-  /* end editor */
+    /* end editor */
+    /* begin query area */
+  form.aui:not(.aui-legacy-forms) .password, form.aui:not(.aui-legacy-forms) .select, form.aui:not(.aui-legacy-forms) .text, form.aui:not(.aui-legacy-forms) .textarea,
+  form.aui:not(.aui-legacy-forms) .password:hover, form.aui:not(.aui-legacy-forms) .select:hover, form.aui:not(.aui-legacy-forms) .text:hover, form.aui:not(.aui-legacy-forms) .textarea:hover,
+    /* end query area */
   h1, h2, h3, h4, h5, h6,
+  .aui-nav-heading,
+  .atlassian-autocomplete .suggestions .esc-prompt,
+  .atlassian-autocomplete .suggestions .active,
   #ghx-header h1, #ghx-header h2,
   .ghx-issue .ghx-key-link, .ghx-parent-stub .ghx-key,
   .ghx-column-headers h6,
@@ -321,21 +339,21 @@
   .ghx-kanplan-ack {
     box-shadow: 0 2px 5px 0 #181f28bb, transparent 0 0 0;
   }
-  
+
   /*
   ** Header to use official Liferay secondary color
   */
   .aui-header {
     background: #134194
   }
-  
+
   /*
   ** Make badges visible (e.g. watchers)
-  */  
+  */
   aui-badge, .aui-badge{
     background: #fff;
   }
-  
+
   /*
   ** Miscellaneous
   */
