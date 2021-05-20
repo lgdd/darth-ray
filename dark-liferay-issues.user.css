@@ -16,6 +16,9 @@
   .navigator-container,
   .page-type-split .navigator-body,
   .page-type-split .navigator-group,
+  .structureBorder,
+  #structure .celldiv, #structure .td,
+  ul.s-ops,
   #issue-content,
   #footer-logo,
   #ghx-pool,
@@ -43,10 +46,10 @@
   .editable-field .save-options {
     background: #293544;
   }
-
+    
   .no-results {
-    background-color: #293544;
-  }
+      background-color: #293544;
+   }
 
   /*
   ** Backgrounds (Darker)
@@ -69,8 +72,9 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:hover,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
-    /* end editor */
+  /* end editor */
   .atlassian-autocomplete .suggestions,
+  .structureBorder #structure .foot,
   #issuetable>tbody>tr,
   .issue-table>tbody>tr,
   #issuetable>tfoot>tr,
@@ -188,13 +192,14 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:hover,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
-    /* end editor */
-    /* begin query area */
+  /* end editor */
+  /* begin query area */
   form.aui:not(.aui-legacy-forms) .password, form.aui:not(.aui-legacy-forms) .select, form.aui:not(.aui-legacy-forms) .text, form.aui:not(.aui-legacy-forms) .textarea,
-  form.aui:not(.aui-legacy-forms) .password:hover, form.aui:not(.aui-legacy-forms) .select:hover, form.aui:not(.aui-legacy-forms) .text:hover, form.aui:not(.aui-legacy-forms) .textarea:hover,
-    /* end query area */
+    form.aui:not(.aui-legacy-forms) .password:hover, form.aui:not(.aui-legacy-forms) .select:hover, form.aui:not(.aui-legacy-forms) .text:hover, form.aui:not(.aui-legacy-forms) .textarea:hover,
+  /* end query area */
   h1, h2, h3, h4, h5, h6,
   .aui-nav-heading,
+   #structure .tableHeader .th .celldiv,
   .atlassian-autocomplete .suggestions .esc-prompt,
   .atlassian-autocomplete .suggestions .active,
   #ghx-header h1, #ghx-header h2,
@@ -214,6 +219,7 @@
   .aui-button .aui-icon,
   .aui-button,
   a.aui-button,
+  #structure .s-expander,
   .aui-button.aui-button-link,
   .ghx-issuetable td.assignee > a,
   .links-list dd .delete-link .icon-default,
@@ -227,6 +233,10 @@
   .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:link,
   .aui-navgroup-horizontal .aui-nav > li a,
   .aui-navgroup-horizontal .aui-nav > li a:link,
+  .s-ph-options-selector.aui-button.aui-button-link,
+  .alm-structure:before,
+  .structureBorder #structure .s-frlink a,
+  .structureBorder #st-footer .s-frlink a,
   #issuetable td:not(.issuekey, .summary, .stsummary) a,
   #issuetable td:not(.issuekey, .summary, .stsummary) a.parentIssue,
   .issue-table td:not(.issuekey, .summary, .stsummary) a,
@@ -243,6 +253,7 @@
   .aui-button:visited,
   .aui-button:hover,
   .issue-drop-zone__button,
+  #structure .s-expander:hover,
   .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a.active,
   .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:visited,
   .aui-sidebar-submenu .aui-navgroup-vertical .aui-nav .aui-nav-selected > .aui-nav-item,
@@ -258,6 +269,11 @@
   .aui-navgroup-horizontal .aui-nav > li a:hover,
   .aui-navgroup-vertical .aui-nav > li > a:hover,
   .aui-nav-vertical > li > a:hover,
+  .s-ph-options-selector.aui-button.aui-button-link:hover,
+  .structureBorder #structure .s-frlink a:hover,
+  .structureBorder #st-footer .s-frlink a:hover,
+  .structureBorder #structure .s-frlink a:visited,
+  .structureBorder #st-footer .s-frlink a:visited,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:active,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:focus,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:hover,
@@ -283,6 +299,7 @@
   table.aui:not(.aui-table-list) > tbody > tr > th,
   table.aui:not(.aui-table-list) > tfoot > tr > td,
   table.aui:not(.aui-table-list) > tfoot > tr > th,
+  .structureBorder #structure .foot,
   .ghx-issuetable .nav,
   .editable-field .save-options,
   .saved-search-selector,
@@ -339,26 +356,32 @@
   .ghx-kanplan-ack {
     box-shadow: 0 2px 5px 0 #181f28bb, transparent 0 0 0;
   }
-
+  
   /*
   ** Header to use official Liferay secondary color
   */
   .aui-header {
     background: #134194
   }
-
+  
   /*
   ** Make badges visible (e.g. watchers)
-  */
+  */  
   aui-badge, .aui-badge{
     background: #fff;
   }
-
+  
   /*
   ** Miscellaneous
   */
   .ui-sidebar::after {
     left: 0;
     width: 2px;
+  }
+    
+  #st-edit-column .grad, #structure .grad,
+  #structure .st-focused .tr.s-focused .grad,
+  #structure .st-details-focused .tr.s-focused .grad {
+    display: none;
   }
 }
