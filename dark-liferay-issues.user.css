@@ -12,13 +12,6 @@
   */
   body,
   .aui-page-panel,
-  .navigator-body,
-  .navigator-container,
-  .page-type-split .navigator-body,
-  .page-type-split .navigator-group,
-  .structureBorder,
-  #structure .celldiv, #structure .td,
-  ul.s-ops,
   #issue-content,
   #footer-logo,
   #ghx-pool,
@@ -46,10 +39,6 @@
   .editable-field .save-options {
     background: #293544;
   }
-    
-  .no-results {
-      background-color: #293544;
-   }
 
   /*
   ** Backgrounds (Darker)
@@ -73,8 +62,6 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
   /* end editor */
-  .atlassian-autocomplete .suggestions,
-  .structureBorder #structure .foot,
   #issuetable>tbody>tr,
   .issue-table>tbody>tr,
   #issuetable>tfoot>tr,
@@ -83,6 +70,10 @@
   .issue-table>tbody>tr:hover,
   .ghx-column-headers .ghx-column,
   .ghx-columns .ghx-column,
+  .ghx-backlog-container,
+  .ghx-parent-group.ghx-away,
+  #ghx-backlog .ghx-parent-group .ghx-subtask-group,
+  #gh:not(.ghx-sticky-sprint-headers-disabled) .ghx-backlog-container .ghx-backlog-header,
   .dynamic-table tr:hover,
   .aui-inline-dialog.aui-help .aui-inline-dialog-contents,
   aui-inline-dialog.aui-help .aui-inline-dialog-contents,
@@ -119,6 +110,11 @@
   */
   .aui-button.aui-button-primary:focus,
   .aui-button.aui-button-primary:hover,
+  .ghx-issue-compact:hover,
+  .ghx-issue-compact:hover .ghx-end,
+  .ghx-issue-compact.ghx-selected:hover .ghx-end,
+  .ghx-issue-compact.ghx-flagged:hover .ghx-end,
+  .ghx-issue-compact.ghx-flagged.ghx-selected:hover .ghx-end,
   .ghx-issue.ghx-selected,
   .ghx-issue:hover {
     background: #1857b5;
@@ -128,11 +124,11 @@
   ** Backgrounds (Secondary Dark)
   */
   .ghx-issue,
-  .ghx-parent-group.ghx-away,
+  .ghx-issue-compact,
+  .ghx-issue-compact .ghx-estimate,
   .aui-lozenge.jira-issue-status-lozenge-medium-gray,
   .aui-lozenge.jira-issue-status-lozenge-blue-gray,
   .aui-lozenge.jira-issue-status-lozenge-default,
-  .atlassian-autocomplete .suggestions .active,
   .version-filter-status-button.component-filter-status-pressed,
   .component-filter-status-button.component-filter-status-pressed,
   .version-filter-status-button.version-filter-status-pressed,
@@ -144,10 +140,11 @@
   ** Foregrounds (Dark)
   */
   body,
-  .atlassian-autocomplete .suggestions li,
   .activity-name,
   .ghx-issue,
   .ghx-fa,
+  .ghx-backlog-container .ghx-issue-count,
+  .ghx-parent-stub .ghx-summary,
   #issuetable > tbody > tr,
   .issue-table > tbody > tr,
   #issuetable > tfoot > tr,
@@ -193,16 +190,10 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
   /* end editor */
-  /* begin query area */
-  form.aui:not(.aui-legacy-forms) .password, form.aui:not(.aui-legacy-forms) .select, form.aui:not(.aui-legacy-forms) .text, form.aui:not(.aui-legacy-forms) .textarea,
-    form.aui:not(.aui-legacy-forms) .password:hover, form.aui:not(.aui-legacy-forms) .select:hover, form.aui:not(.aui-legacy-forms) .text:hover, form.aui:not(.aui-legacy-forms) .textarea:hover,
-  /* end query area */
   h1, h2, h3, h4, h5, h6,
-  .aui-nav-heading,
-   #structure .tableHeader .th .celldiv,
-  .atlassian-autocomplete .suggestions .esc-prompt,
-  .atlassian-autocomplete .suggestions .active,
   #ghx-header h1, #ghx-header h2,
+  .ghx-issue-compact,
+  .ghx-backlog-header .ghx-name,
   .ghx-issue .ghx-key-link, .ghx-parent-stub .ghx-key,
   .ghx-column-headers h6,
   table.aui>tbody>tr>th,
@@ -219,7 +210,6 @@
   .aui-button .aui-icon,
   .aui-button,
   a.aui-button,
-  #structure .s-expander,
   .aui-button.aui-button-link,
   .ghx-issuetable td.assignee > a,
   .links-list dd .delete-link .icon-default,
@@ -233,10 +223,6 @@
   .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:link,
   .aui-navgroup-horizontal .aui-nav > li a,
   .aui-navgroup-horizontal .aui-nav > li a:link,
-  .s-ph-options-selector.aui-button.aui-button-link,
-  .alm-structure:before,
-  .structureBorder #structure .s-frlink a,
-  .structureBorder #st-footer .s-frlink a,
   #issuetable td:not(.issuekey, .summary, .stsummary) a,
   #issuetable td:not(.issuekey, .summary, .stsummary) a.parentIssue,
   .issue-table td:not(.issuekey, .summary, .stsummary) a,
@@ -253,7 +239,6 @@
   .aui-button:visited,
   .aui-button:hover,
   .issue-drop-zone__button,
-  #structure .s-expander:hover,
   .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a.active,
   .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:visited,
   .aui-sidebar-submenu .aui-navgroup-vertical .aui-nav .aui-nav-selected > .aui-nav-item,
@@ -269,11 +254,6 @@
   .aui-navgroup-horizontal .aui-nav > li a:hover,
   .aui-navgroup-vertical .aui-nav > li > a:hover,
   .aui-nav-vertical > li > a:hover,
-  .s-ph-options-selector.aui-button.aui-button-link:hover,
-  .structureBorder #structure .s-frlink a:hover,
-  .structureBorder #st-footer .s-frlink a:hover,
-  .structureBorder #structure .s-frlink a:visited,
-  .structureBorder #st-footer .s-frlink a:visited,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:active,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:focus,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item a:hover,
@@ -299,7 +279,6 @@
   table.aui:not(.aui-table-list) > tbody > tr > th,
   table.aui:not(.aui-table-list) > tfoot > tr > td,
   table.aui:not(.aui-table-list) > tfoot > tr > th,
-  .structureBorder #structure .foot,
   .ghx-issuetable .nav,
   .editable-field .save-options,
   .saved-search-selector,
@@ -334,6 +313,7 @@
   #issuetable>tfoot>tr>td, .issue-table>tfoot>tr>td,
   .aui-inline-dialog.aui-help .aui-inline-dialog-contents,
   aui-inline-dialog.aui-help .aui-inline-dialog-contents,
+  #ghx-backlog-column,
   form.aui:not(.aui-legacy-forms) .password,
   form.aui:not(.aui-legacy-forms) .select,
   form.aui:not(.aui-legacy-forms) .text,
@@ -377,11 +357,5 @@
   .ui-sidebar::after {
     left: 0;
     width: 2px;
-  }
-    
-  #st-edit-column .grad, #structure .grad,
-  #structure .st-focused .tr.s-focused .grad,
-  #structure .st-details-focused .tr.s-focused .grad {
-    display: none;
   }
 }
