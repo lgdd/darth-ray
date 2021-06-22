@@ -1,0 +1,60 @@
+/* ==UserStyle==
+@name           Dark Liferay Learn
+@namespace      github.com/rbohl/darth-ray
+@version        1.0.0
+@description    Dark theme for Liferay Learn
+@author         github.com/rbohl
+@license        MIT
+@updateURL      https://raw.githubusercontent.com/rbohl/darth-ray/main/dark-liferay-blogs.user.css
+==/UserStyle== */
+@-moz-document domain("learn.liferay.com") {
+    .homepage .banner{
+        background-color: #182029;
+        color: #ddd;
+    }
+    .landing-page-container, .article-body {
+        background-color: #293544;
+        color: #ddd;
+    }
+    .documentations .doc-nav, .documentations .doc-nav-footer, .documentations .doc-nav-wrapper-inner, .documentations .doc-nav .toctree-l1>a {
+        background-color: #182029;
+        color: #ddd;
+    }
+    .d-none {
+        background-color: #293544;
+    }
+    .documentations .nav-link{
+        color: #ccccff;
+    }
+    .documentations .info-bar {
+        background-color: #182029;
+        color: #ddd;
+    }
+    .row{
+        background-color: #293544;
+        color: #ddd;
+    }
+    header {
+        background-color: #293544;
+    }
+    div.admonition.warning, div.admonition.note, div.admonition.tip, div.admonition.important .admonition-title {
+        background-color: #808080;
+        color: #182029;
+    }
+    div.admonition.warning, div.admonition.note, div.admonition.tip, div.admonition.important {
+        background-color: #808080;
+        color: #182029;
+    }
+    div.sidebar {
+        background-color: #ddd;
+        color: #182029;
+    }
+    .landing-page .section-card {
+        background-color: #ddd;
+        color: #ddd;
+    }
+    .documentations h1, .documentations h2, .documentations h3, .documentations h4 {
+        /* splash of color:orange headings */
+        color: #ff3300;
+    }
+}
