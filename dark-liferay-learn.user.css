@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name           Dark Liferay Learn
-@namespace      github.com/rbohl/darth-ray
+@namespace      github.com/lgdd/darth-ray
 @version        1.0.0
 @description    Dark theme for Liferay Learn
 @author         github.com/rbohl
 @license        MIT
-@updateURL      https://raw.githubusercontent.com/rbohl/darth-ray/main/dark-liferay-blogs.user.css
+@updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/main/dark-liferay-learn.user.css
 ==/UserStyle== */
 @-moz-document domain("learn.liferay.com") {
     .homepage .banner{
