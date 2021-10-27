@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Liferay Issues
 @namespace      DarkLiferayIssues
-@version        1.0.5
+@version        1.0.6
 @description    Dark theme for Liferay Issues (JIRA)
 @author         github.com/lgdd
 @updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/main/dark-liferay-issues.user.css
@@ -16,6 +16,12 @@
   #footer-logo,
   #ghx-pool,
   #ghx-column-header-group,
+  #dashboard,
+  #dashboard>.vertical.tabs, #dashboard>#dashboard-content,
+  #dashboard-content>.aui-page-header,
+  #issuetable, .issue-table,
+  .g-project .category-item h4,
+  .g-project li.project-item,
   .split-view #stalker,
   .ghx-issuetable,
   .navigator-search,
@@ -62,6 +68,10 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus,
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
   /* end editor */
+  .gadget .dashboard-item-content,
+  #issuetable>thead .sortable:hover,
+  .issue-table>thead .sortable:hover,
+  #issuetable>thead .active, .issue-table>thead .active,
   #issuetable>tbody>tr,
   .issue-table>tbody>tr,
   #issuetable>tfoot>tr,
@@ -238,7 +248,8 @@
   .issue-table td:not(.issuekey, .summary, .stsummary) a,
   .issue-table td:not(.issuekey, .summary, .stsummary) a.parentIssue,
   .aui-tabs > .tabs-menu .menu-item a,
-  .aui-tabs > .tabs-menu .menu-item a:link {
+  .aui-tabs > .tabs-menu .menu-item a:link,
+  .gadget a, .config a {
     color: #fff;
   }
 
@@ -272,7 +283,12 @@
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:focus,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:visited,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a,
-  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:link {
+  .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:link,
+  .gadget a:hover,
+  .config a:hover,
+  .gadget a:focus,
+  .config a:focus,
+  .gadget a:active {
     color: #589bff;
   }
 
