@@ -385,4 +385,7 @@
     left: 0;
     width: 2px;
   }
+  .action-body blockquote {
+    color: #ccc;
+  }
 }
