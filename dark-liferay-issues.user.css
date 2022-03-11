@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Liferay Issues
 @namespace      DarkLiferayIssues
-@version        1.0.6
+@version        1.0.7
 @description    Dark theme for Liferay Issues (JIRA)
 @author         github.com/lgdd
 @updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/main/dark-liferay-issues.user.css
@@ -17,9 +17,28 @@
   #ghx-pool,
   #ghx-column-header-group,
   #dashboard,
-  #dashboard>.vertical.tabs, #dashboard>#dashboard-content,
-  #dashboard-content>.aui-page-header,
-  #issuetable, .issue-table,
+  #dashboard > .vertical.tabs,
+  #dashboard > #dashboard-content,
+  #dashboard-content > .aui-page-header,
+  #issuetable,
+  #structure .tr,
+  #st-edit-column .grad,
+  #structure .grad,
+  .aui-dropdown2.aui-style-default:hover .aui-dropdown2-checkbox:not(.aui-dropdown2-disabled):hover,
+  .aui-dropdown2.aui-style-default:hover .aui-dropdown2-radio:not(.aui-dropdown2-disabled):hover,
+  .aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):hover,
+  .aui-dropdown2.aui-style-default .active,
+  .aui-dropdown2.aui-style-default .aui-dropdown2-active,
+  .aui-dropdown2.aui-style-default [role="checkbox"]:hover,
+  .aui-dropdown2.aui-style-default [role="menuitem"]:hover,
+  .aui-dropdown2.aui-style-default [role="menuitemcheckbox"]:hover,
+  .aui-dropdown2.aui-style-default [role="menuitemradio"]:hover,
+  .aui-dropdown2.aui-style-default [role="radio"]:hover,
+  .aui-dropdown2.aui-style-default a:hover,
+  .aui-dropdown2.aui-style-default .active:hover,
+  .aui-dropdown2.aui-style-default .aui-dropdown2-active:hover,
+  .issue-table,
+  .structureBorder,
   .g-project .category-item h4,
   .g-project li.project-item,
   .split-view #stalker,
@@ -50,6 +69,17 @@
   ** Backgrounds (Darker)
   */
   /* begin editor */
+  #content > header.s-board-header,
+  #structure .th-ccnf,
+  .structureBorder #structure .foot,
+  #structure .tr.expanded,
+   #structure .tr.hrowf,
+    #structure .hrow .grad,
+    #structure .st-focused .tr.s-focused, #structure .st-details-focused .tr.s-focused,
+    #structure .st-focused .tr.s-focused .grad, #structure .st-details-focused .tr.s-focused .grad,
+ #structure .tableHeader .th-ctl .th-ctl-hi,
+    .aui-inline-dialog.s-info-inline-dialog .s-info-content,
+    .aui-dropdown2.aui-style-default,
   body#tinymce,
   .wiki-edit-toolbar,
   div.mce-edit-area,
@@ -128,8 +158,10 @@
   .ghx-issue-compact.ghx-flagged:hover .ghx-end,
   .ghx-issue-compact.ghx-flagged.ghx-selected:hover .ghx-end,
   .ghx-issue-compact.ghx-selected .ghx-end,
-  .ghx-issue-compact.ghx-selected, .ghx-issue-compact .ghx-selected-group,
-  .ghx-issue-compact.ghx-selected:hover, .ghx-issue-compact .ghx-selected-group:hover,
+  .ghx-issue-compact.ghx-selected,
+  .ghx-issue-compact .ghx-selected-group,
+  .ghx-issue-compact.ghx-selected:hover,
+  .ghx-issue-compact .ghx-selected-group:hover,
   .ghx-issue.ghx-selected,
   .ghx-issue:hover {
     background: #1857b5;
@@ -162,6 +194,7 @@
   .ghx-backlog-container .ghx-issue-count,
   .ghx-parent-stub .ghx-summary,
   .ghx-detail-issue,
+  .aui-inline-dialog.s-info-inline-dialog .s-info-content p,
   #issuetable > tbody > tr,
   .issue-table > tbody > tr,
   #issuetable > tfoot > tr,
@@ -208,6 +241,15 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
   /* end editor */
   h1, h2, h3, h4, h5, h6,
+  .aui-inline-dialog.s-info-inline-dialog .s-info-content h1,
+  .aui-inline-dialog.s-info-inline-dialog .s-info-content h2,
+  .aui-inline-dialog.s-info-inline-dialog .s-info-content h3,
+  .aui-inline-dialog.s-info-inline-dialog .s-info-content h4,
+    .aui-inline-dialog.s-info-inline-dialog .s-info-content h5,
+  .structureBorder #structure .s-frlink a,
+  .structureBorder #st-footer .s-frlink a,
+  .structureBorder #structure .s-frlink a:visited,
+  .structureBorder #st-footer .s-frlink a:visited,
   #ghx-header h1, #ghx-header h2,
   .ghx-detail-view.gh-editable-detail-view .ghx-detail-issue .module.toggle-wrap .toggle-title,
   .ghx-issue-compact,
@@ -243,13 +285,25 @@
   .aui-navgroup-horizontal .aui-nav > li a,
   .aui-navgroup-horizontal .aui-nav > li a:link,
   .s-ph-options-selector.aui-button.aui-button-link,
+  .aui-dropdown2.aui-style-default [role="checkbox"],
+  .aui-dropdown2.aui-style-default [role="menuitem"],
+  .aui-dropdown2.aui-style-default [role="menuitemcheckbox"],
+  .aui-dropdown2.aui-style-default [role="menuitemradio"],
+  .aui-dropdown2.aui-style-default [role="radio"],
+  .aui-dropdown2.aui-style-default a,
+  .aui-dropdown2.aui-style-default .active,
+  .aui-dropdown2.aui-style-default .aui-dropdown2-active,
+  .aui-dropdown2.aui-style-default:hover .aui-dropdown2-checkbox,
+  .aui-dropdown2.aui-style-default:hover .aui-dropdown2-radio,
+  .aui-dropdown2.aui-style-default:hover a,
   #issuetable td:not(.issuekey, .summary, .stsummary) a,
   #issuetable td:not(.issuekey, .summary, .stsummary) a.parentIssue,
   .issue-table td:not(.issuekey, .summary, .stsummary) a,
   .issue-table td:not(.issuekey, .summary, .stsummary) a.parentIssue,
   .aui-tabs > .tabs-menu .menu-item a,
   .aui-tabs > .tabs-menu .menu-item a:link,
-  .gadget a, .config a {
+  .gadget a,
+  .config a {
     color: #fff;
   }
 
@@ -284,6 +338,9 @@
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:visited,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a,
   .aui-tabs.horizontal-tabs > .tabs-menu > .menu-item.active-tab a:link,
+  .aui-dropdown2.aui-style-default:hover .aui-dropdown2-checkbox:not(.aui-dropdown2-disabled):hover,
+  .aui-dropdown2.aui-style-default:hover .aui-dropdown2-radio:not(.aui-dropdown2-disabled):hover,
+  .aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):hover,
   .gadget a:hover,
   .config a:hover,
   .gadget a:focus,
@@ -302,6 +359,8 @@
   */
   #ghx-operations,
   .ghx-column-headers .ghx-column,
+  #structure .sechead,
+  #structure .foot,
   table.aui:not(.aui-table-list) > tbody > tr > td,
   table.aui:not(.aui-table-list) > tbody > tr > th,
   table.aui:not(.aui-table-list) > tfoot > tr > td,
@@ -330,6 +389,7 @@
   .richeditor-cover~.rte-container:not(:empty),
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield, body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:hover, body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:focus, body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
   /* end editor */
+  #structure .tr,
   #issuetable>thead>tr>th:first-child, .issue-table>thead>tr>th:first-child,
   #issuetable>tbody>tr>th:first-child, .issue-table>tbody>tr>th:first-child,
   #issuetable>tbody>tr>td:first-child, .issue-table>tbody>tr>td:first-child,
@@ -363,26 +423,30 @@
   .ghx-kanplan-ack {
     box-shadow: 0 2px 5px 0 #181f28bb, transparent 0 0 0;
   }
-  
+
   /*
   ** Header to use official Liferay secondary color
   */
   .aui-header {
-    background: #134194
+    background: #134194;
   }
-  
+
   /*
   ** Make badges visible (e.g. watchers)
-  */  
-  aui-badge, .aui-badge{
+  */
+  aui-badge,
+  .aui-badge {
     background: #fff;
   }
-  
+
   /*
   ** Miscellaneous
   */
   .ui-sidebar::after {
     left: 0;
     width: 2px;
+  }
+  .action-body blockquote {
+    color: #ccc;
   }
 }
