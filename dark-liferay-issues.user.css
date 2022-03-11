@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Liferay Issues
 @namespace      DarkLiferayIssues
-@version        1.0.7
+@version        1.0.8
 @description    Dark theme for Liferay Issues (JIRA)
 @author         github.com/lgdd
 @updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/main/dark-liferay-issues.user.css
@@ -70,16 +70,17 @@
   */
   /* begin editor */
   #content > header.s-board-header,
+  .component-versions-item:hover, .component-versions-item--active,
   #structure .th-ccnf,
   .structureBorder #structure .foot,
   #structure .tr.expanded,
-   #structure .tr.hrowf,
-    #structure .hrow .grad,
-    #structure .st-focused .tr.s-focused, #structure .st-details-focused .tr.s-focused,
-    #structure .st-focused .tr.s-focused .grad, #structure .st-details-focused .tr.s-focused .grad,
- #structure .tableHeader .th-ctl .th-ctl-hi,
-    .aui-inline-dialog.s-info-inline-dialog .s-info-content,
-    .aui-dropdown2.aui-style-default,
+  #structure .tr.hrowf,
+  #structure .hrow .grad,
+  #structure .st-focused .tr.s-focused, #structure .st-details-focused .tr.s-focused,
+  #structure .st-focused .tr.s-focused .grad, #structure .st-details-focused .tr.s-focused .grad,
+  #structure .tableHeader .th-ctl .th-ctl-hi,
+  .aui-inline-dialog.s-info-inline-dialog .s-info-content,
+  .aui-dropdown2.aui-style-default,
   body#tinymce,
   .wiki-edit-toolbar,
   div.mce-edit-area,
