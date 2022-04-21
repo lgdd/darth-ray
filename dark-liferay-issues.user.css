@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Liferay Issues
 @namespace      DarkLiferayIssues
-@version        1.0.8
+@version        1.0.9
 @description    Dark theme for Liferay Issues (JIRA)
 @author         github.com/lgdd
 @updateURL      https://raw.githubusercontent.com/lgdd/darth-ray/main/dark-liferay-issues.user.css
@@ -24,6 +24,10 @@
   #structure .tr,
   #st-edit-column .grad,
   #structure .grad,
+  .jira-dialog,
+  .jira-dialog .jira-dialog-heading,
+  .jira-dialog .jira-dialog-content,
+  .jira-dialog .buttons-container,
   .aui-dropdown2.aui-style-default:hover .aui-dropdown2-checkbox:not(.aui-dropdown2-disabled):hover,
   .aui-dropdown2.aui-style-default:hover .aui-dropdown2-radio:not(.aui-dropdown2-disabled):hover,
   .aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):hover,
@@ -242,6 +246,12 @@
   body:not(.specificity-inc):not(.specificity-inc):not(.specificity-inc) .wiki-edit-content textarea.wiki-textfield:active,
   /* end editor */
   h1, h2, h3, h4, h5, h6,
+  .jira-dialog .jira-dialog-heading h1,
+  .jira-dialog .jira-dialog-heading h2,
+  .jira-dialog .jira-dialog-heading h2,
+  .jira-dialog .jira-dialog-heading h3,
+  .jira-dialog .jira-dialog-heading h4,
+  .jira-dialog .jira-dialog-heading h5,
   .aui-inline-dialog.s-info-inline-dialog .s-info-content h1,
   .aui-inline-dialog.s-info-inline-dialog .s-info-content h2,
   .aui-inline-dialog.s-info-inline-dialog .s-info-content h3,
@@ -400,6 +410,9 @@
   #issuetable>tbody>tr>td, .issue-table>tbody>tr>td,
   #issuetable>tfoot>tr>td, .issue-table>tfoot>tr>td,
   .aui-inline-dialog.aui-help .aui-inline-dialog-contents,
+  .jira-dialog,
+  .jira-dialog .jira-dialog-heading,
+  .jira-dialog .buttons-container,
   aui-inline-dialog.aui-help .aui-inline-dialog-contents,
   #ghx-backlog-column,
   form.aui:not(.aui-legacy-forms) .password,
@@ -449,5 +462,8 @@
   }
   .action-body blockquote {
     color: #ccc;
+  }
+  .aui-blanket {
+    background: rgb(0 0 0 / 80%);
   }
 }
